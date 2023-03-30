@@ -7,7 +7,6 @@ class Dekhao {
   static snackBarCout(BuildContext context, String msg) {
     ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(duration: const Duration(seconds: 4), content: Text(msg)));
-    ///github e upload hocchilo naaaa
   }
 
   static alertDialogBox(BuildContext context, String exception) {
