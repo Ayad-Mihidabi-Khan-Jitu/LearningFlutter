@@ -8,7 +8,7 @@ class FirebaseService {
   final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
   final FirebaseFirestore firebaseFirestore = FirebaseFirestore.instance;
   late BuildContext context;
-  bool signupSuccess = false;
+  late bool signupSuccess = false;
 
   FirebaseService({required this.context});
 
@@ -24,7 +24,7 @@ class FirebaseService {
       print("Sign up complete!!");
     }).onError((error, stackTrace) {
       print("error: ${error.toString()}");
-      Navigator.of(context).pop();
+      //Navigator.of(context).pop();
       Dekhao.alertDialogBox(context,error.toString());
       //Dekhao.snackCout(context, error.toString());
     });
